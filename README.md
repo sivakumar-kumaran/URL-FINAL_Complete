@@ -399,11 +399,11 @@ Features:
 
 ---
 
-## License
+🎥 Live Project Demonstration
 
-This project is licensed under the MIT License.
+Watch the complete project walkthrough and feature demonstration:
 
----
+Demo Video: https://youtu.be/ZcG945lYw_M
 
 ## Author
 
