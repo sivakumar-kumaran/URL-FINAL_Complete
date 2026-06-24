@@ -1,0 +1,33 @@
+name: Full Stack CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Backend install
+        run: |
+          cd backend
+          npm install
+
+      - name: Backend test
+        run: |
+          cd backend
+          npm test
+
+      - name: Frontend install
+        run: |
+          cd frontend
+          npm install
+
+      - name: Frontend build
+        run: |
+          cd frontend
+          npm run build
